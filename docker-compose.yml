@@ -50,7 +50,7 @@ services:
         condition: on-failure
 
 volumes:
-  - mongo-data:
+  - mongo-data: {}
 
 networks:
   app-network:
