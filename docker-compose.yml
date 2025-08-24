@@ -16,7 +16,7 @@ services:
   backend:
     image: notesstack_backend:latest
     environment:
-      - MONGO_URI=mongodb://mongo:27017
+      - MONGO_URI=notesstack_mongo://mongo:27017
     ports:
       - "3000:3000"
     networks:
