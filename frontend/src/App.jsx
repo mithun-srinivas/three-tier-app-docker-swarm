@@ -4,7 +4,7 @@ function App() {
   const [note, setNote] = useState(null)
 
   useEffect(() => {
-    fetch("http://localhost:3001/note").then((res) => res.json()).then(data => setNote(data))
+    fetch("http://65.0.178.126:3000/note").then((res) => res.json()).then(data => setNote(data))
   }, [])
   return (
     <>
