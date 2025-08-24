@@ -50,7 +50,8 @@ services:
         condition: on-failure
 
 volumes:
-  - mongo-data: {}
+  - mongo-data:
+      driver: local
 
 networks:
   app-network:
